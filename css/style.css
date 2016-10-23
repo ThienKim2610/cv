@@ -35,7 +35,8 @@ a:hover{
 .pink{ background-color: #ea6060; }
 .bg-white{ background-color: #fff; }
 .flex{display: flex;}
-
+.dark-purple .underline-text{color: rgba(255, 255, 255, 0.4);}
+.dark-purple .underline-text:after{background-color: rgba(255, 255, 255, 0.4);}
 h2{
 	text-transform: uppercase;
 	font-size: 40px;
@@ -66,7 +67,7 @@ h3{
     height: 1px;
     position: absolute;
     bottom: 20px;
-    left: -30%;
+    left: -.65em;
     background-color: #483367;	
 }
 .pusher-20 p{
