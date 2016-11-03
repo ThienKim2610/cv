@@ -365,6 +365,10 @@ h3{
 	position: relative;
 	background-size: 100% auto;
 	height: 350px;
+  border: 1px solid #eee;
+  -webkit-filter: grayscale(0);
+  -ms-filter: grayscale(0);
+  filter: grayscale(100%);
 }
 .img-wrap{
 	display: block;

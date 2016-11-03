@@ -1,6 +1,7 @@
 ### Reference
 
 Website              https://thienkim-frontend.github.io/cv/ 
+
 Linkin               https://vn.linkedin.com/in/thien-kim-nguyen-dao-3bb38084
 
 ### Portfolio 
