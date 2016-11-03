@@ -13,7 +13,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= meta.imgs %>',
-                    src: '**/*.{png,gif,jpg,sgv,pdf,ico}',
+                    src: '**/*.{png,gif,jpg,sgv,pdf,ico,jpeg}',
                     dest: '<%= meta.output %>images',
                     filter: 'isFile',
                     flatten: false
@@ -64,7 +64,10 @@ module.exports = function (grunt) {
             tasks: ['uglify']
           }, {
             files: '<%= meta.css %>**/*',
-            tasks: ['cssmin']        
+            tasks: ['cssmin']  
+          }, {
+            files: 'source/*.html',
+            tasks: ['copy']        
         }],
         'gh-pages': {
             options: {
