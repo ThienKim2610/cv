@@ -71,7 +71,7 @@ module.exports = function (grunt) {
         }],
         'gh-pages': {
             options: {
-                base: 'output',
+                base: 'public',
                 branch: 'gh-pages',
                 repo: 'https://github.com/thienkim-frontend/cv.git'
             },
