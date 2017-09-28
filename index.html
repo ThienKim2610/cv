@@ -235,7 +235,7 @@
 							<div class="col-md-10 col-sm-12 details-wrapper">
 								<i class="timeline-circle"></i>
 								<h3>Frontend Web Developer</h3>
-								<p><span title="A 14 year old full service digital marketing agency headquartered in Singapore, with offices in Malaysia, Hong Kong, Shanghai and Vietnam.">Splash Interactive Group</span><br>
+								<p><span data-toggle="tooltip" title="A 14 year old full service digital marketing agency headquartered in Singapore, with offices in Malaysia, Hong Kong, Shanghai and Vietnam.">Splash Interactive Group</span><br>
 									<a href="http://www.splashinteractive.com.vn/">http://www.splashinteractive.com.vn</a>
 									<!-- 152/11B Dien Bien Phu St, Ward 25, Binh Thanh District -->
 								</p>
@@ -256,7 +256,7 @@
 							<div class="col-md-10 col-sm-12 details-wrapper">
 								<i class="timeline-circle"></i>
 								<h3>Web Designer</h3>
-								<p><span title="A 14 year old full service digital marketing agency headquartered in Singapore, with offices in Malaysia, Hong Kong, Shanghai and Vietnam.">Splash Interactive Group</span><br>
+								<p><span data-toggle="tooltip" title="A 14 year old full service digital marketing agency headquartered in Singapore, with offices in Malaysia, Hong Kong, Shanghai and Vietnam.">Splash Interactive Group</span><br>
 									<a href="http://www.splashinteractive.com.vn/">http://www.splashinteractive.com.vn</a>
 									<!-- 152/11B Dien Bien Phu St, Ward 25, Binh Thanh District -->
 								</p>
@@ -276,7 +276,7 @@
 							<div class="col-md-10 col-sm-12 details-wrapper">
 								<i class="timeline-circle"></i>
 								<h3>Web Designer</h3>
-								<p> <span title="Thien Tan was founded in 2006 with the purpose of software development in the field of information technology and telecommunications in Vietnam.">Thien Tan company limited</span> <br>
+								<p> <span data-toggle="tooltip" title="Thien Tan was founded in 2006 with the purpose of software development in the field of information technology and telecommunications in Vietnam.">Thien Tan company limited</span> <br>
 									<a href="http://www.tt-tech.vn/">http://www.tt-tech.vn</a>
 									<!-- 1395 3/2 St, Ward 16, District 11, Ho Chi Minh city -->
 								</p>
@@ -663,6 +663,7 @@
 	<script src="js/plugin.min.js"></script>
 	<script>
 		$(document).ready(function() {
+			$('[data-toggle="tooltip"]').tooltip(); 
 			$(".navbar-nav > li > a").each(function( index ) {
 		  	$( this ).css({'animation-delay': (index/10)+'s'});
 		  });
