@@ -588,18 +588,11 @@ h3{
 	.btn-block .btn:not(:first-child){
 		margin-top: 15px;
 	}
-	#experiment h2{ margin-bottom: 5px;}
-	#experiment .owl-carousel{
-		margin-top: 60px;
-	}
+
 	#experiment .timeline-box li{
 		margin-bottom: 10px;
 	}
-	.flex{ display: block;}
-	.timeline-box .date-wrapper .date{
-		right: auto;
-		left: 40px;
-	}
+
 	.gallery-filter{
 		overflow-x: scroll;
 		white-space: nowrap;
@@ -617,10 +610,7 @@ h3{
     width: calc(100% - 20px);
 		padding-left: 15px;
 	}
-	#experiment .owl-carousel .owl-controls{
-		left: 0;
-    top: -45px;
-	}
+
 }
 
 /* Small Devices, Tablets */
@@ -629,26 +619,65 @@ h3{
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-	
+@media only screen and (max-width : 991px) {
+		.flex{ display: block;}
+		.timeline-item{
+			position: relative;
+		}
+		.timeline-box .date-wrapper{
+			position: absolute;
+			left: 30px;
+			top: 0;
+		}
+		.details-wrapper{
+			padding-top: 55px;
+			padding-bottom: 10px;
+		}
+		.timeline-box .date-wrapper .date{
+			position: static;
+		}
+		#experiment h2{ margin-bottom: 5px;}
+		#experiment .owl-carousel{
+			margin-top: 60px;
+		}
+		#experiment .owl-carousel .owl-controls{
+			right: 0;
+	    top: -45px;
+	    left: auto
+		}
+		.timeline-box{
+			border-left: 0;
+			padding-left: 10px;
+		}
+		.navbar-toggle{
+			border: 1px solid rgb(0, 0, 0);
+	    border-radius: 0;
+		}
+		.navbar-toggle .icon-bar{
+	    background: #000;
+		}
+		.nav>li{
+			text-align: left;
+			
+		}
+		.nav>li a{
+			border-top: 1px solid rgba(0,0,0,.14);
+			transition: all 0.5s 1s ease-out;
+			animation: returnToNormal .5s;
+		}
+		.navbar li+li {
+		    border-left: 0;
+		}
+		.navbar-collapse.in {
+		    overflow-y: visible;
+		}
 }
 
 @media only screen and (min-width : 960px) {
 	
 }
 @media only screen and (min-width : 768px) and (max-width : 991px){
-	.timeline-box .date-wrapper .date{
-		left: 40px;
-		right: auto;
-	}
-	#experiment h2{ margin-bottom: 5px;}
-	#experiment .owl-carousel{
-		margin-top: 60px;
-	}
-	#experiment .owl-carousel .owl-controls{
-		left: 0;
-    top: -45px;
-	}
+	
 }
 
 
@@ -656,4 +685,36 @@ h3{
 @media only screen and (min-width : 1200px) {
 
 	
+}
+
+.nav>li a{
+	transition: all 0.5s 1s ease-out;
+	animation: returnToNormal .5s;
+}
+@-webkit-keyframes returnToNormal {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes returnToNormal {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
 }

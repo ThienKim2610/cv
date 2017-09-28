@@ -37,8 +37,14 @@
 			<div class="container">
 				<div class="navbar-header">
 					<a class="navbar-brand" href="#">Resume's Kim</a>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
 				</div>
-				<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<div class="collapse navbar-collapse" id="navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
 						<li data-step="1"><a href="#hello">Home</a></li>
 						<li data-step="2"><a href="#introduction">Introduction</a></li>
@@ -226,10 +232,10 @@
 							<div class="col-md-2 date-wrapper">
 								<p class="date">12/2015 - present</p> 
 							</div>
-							<div class="col-md-10 details-wrapper">
+							<div class="col-md-10 col-sm-12 details-wrapper">
 								<i class="timeline-circle"></i>
 								<h3>Frontend Web Developer</h3>
-								<p><span title="A 14 year old full service digital marketing agency headquartered in Singapore, with offices in Malaysia, Hong Kong, Shanghai and Vietnam.">Splash Interactive Group</span><br>
+								<p><span data-toggle="tooltip" title="A 14 year old full service digital marketing agency headquartered in Singapore, with offices in Malaysia, Hong Kong, Shanghai and Vietnam.">Splash Interactive Group</span><br>
 									<a href="http://www.splashinteractive.com.vn/">http://www.splashinteractive.com.vn</a>
 									<!-- 152/11B Dien Bien Phu St, Ward 25, Binh Thanh District -->
 								</p>
@@ -247,10 +253,10 @@
 							<div class="col-md-2 date-wrapper">
 								<p class="date">04/2015 - 12/2015</p> 
 							</div>
-							<div class="col-md-10 details-wrapper">
+							<div class="col-md-10 col-sm-12 details-wrapper">
 								<i class="timeline-circle"></i>
 								<h3>Web Designer</h3>
-								<p><span title="A 14 year old full service digital marketing agency headquartered in Singapore, with offices in Malaysia, Hong Kong, Shanghai and Vietnam.">Splash Interactive Group</span><br>
+								<p><span data-toggle="tooltip" title="A 14 year old full service digital marketing agency headquartered in Singapore, with offices in Malaysia, Hong Kong, Shanghai and Vietnam.">Splash Interactive Group</span><br>
 									<a href="http://www.splashinteractive.com.vn/">http://www.splashinteractive.com.vn</a>
 									<!-- 152/11B Dien Bien Phu St, Ward 25, Binh Thanh District -->
 								</p>
@@ -267,10 +273,10 @@
 							<div class="col-md-2 date-wrapper">
 								<p class="date">12/2012 - 08/2013</p> 
 							</div>
-							<div class="col-md-10 details-wrapper">
+							<div class="col-md-10 col-sm-12 details-wrapper">
 								<i class="timeline-circle"></i>
 								<h3>Web Designer</h3>
-								<p> <span title="Thien Tan was founded in 2006 with the purpose of software development in the field of information technology and telecommunications in Vietnam.">Thien Tan company limited</span> <br>
+								<p> <span data-toggle="tooltip" title="Thien Tan was founded in 2006 with the purpose of software development in the field of information technology and telecommunications in Vietnam.">Thien Tan company limited</span> <br>
 									<a href="http://www.tt-tech.vn/">http://www.tt-tech.vn</a>
 									<!-- 1395 3/2 St, Ward 16, District 11, Ho Chi Minh city -->
 								</p>
@@ -657,6 +663,10 @@
 	<script src="js/plugin.min.js"></script>
 	<script>
 		$(document).ready(function() {
+			$('[data-toggle="tooltip"]').tooltip(); 
+			$(".navbar-nav > li > a").each(function( index ) {
+		  	$( this ).css({'animation-delay': (index/10)+'s'});
+		  });
 			/*-----------------------------------------
 	    OWL CAROUSEL
 	    ------------------------------------------*/
