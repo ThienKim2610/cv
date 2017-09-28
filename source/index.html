@@ -55,28 +55,28 @@
 			<div class="row">
 				<div class="col-md-5 info-box wow fadeInUp" data-wow-delay=".1s"> 
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-6 col-sm-6">
 							<div class="info-box-item">
 								<i class="icon-phone"></i>
 								<h4>Phone</h4>
 								<p>01267005210</p>
 							</div>
 						</div>
-						<div class="col-md-6 wow fadeInUp" data-wow-delay=".1s">
+						<div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".1s">
 							<div class="info-box-item">
 								<i class="icon-envelope"></i>
 								<h4>Email</h4>
 								<p><a href="mailto:ndt_kim@yahoo.com.vn">ndt_kim@yahoo.com.vn</a></p>
 							</div>
 						</div>
-						<div class="col-md-6 wow fadeInUp" data-wow-delay=".2s">
+						<div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
 							<div class="info-box-item">
 								<i class="icon-layers"></i>
 								<h4>Linkin</h4>
 								<p><a href="https://vn.linkedin.com/in/thien-kim-nguyen-dao-3bb38084">goo.gl/Vro1Kc</a></p>
 							</div>
 						</div>
-						<div class="col-md-6 wow fadeInUp" data-wow-delay=".2s">
+						<div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
 							<div class="info-box-item">
 								<i class="icon-gears"></i>
 								<h4>Github</h4>
@@ -220,7 +220,7 @@
 				</div>
 			</div>
 			<div class="row flex">
-				<div class="col-md-8">
+				<div class="col-md-8 col-sm-12">
 					<div class="timeline-box">
 						<div class="row timeline-item wow fadeInUp" data-wow-delay=".1s">
 							<div class="col-md-2 date-wrapper">
@@ -284,7 +284,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-12">
 					<div class="highlight-box">
 						<h3>Hightlight of skills</h3>
 						<ul>
@@ -657,11 +657,25 @@
 	<script src="js/plugin.min.js"></script>
 	<script>
 		$(document).ready(function() {
- 			// _______________ owl Carousel
+			/*-----------------------------------------
+	    OWL CAROUSEL
+	    ------------------------------------------*/
 			$(".owl-carousel, .portfolio-carousel").owlCarousel({
 				margin: 20,
 				items : 4,
 				pagination: false,
+				responsiveClass:true,
+		    responsive:{
+		        0:{
+		            items:2,
+		            nav:true
+		        },
+		        768:{
+		            items:4,
+		            nav:true,
+		            loop:false
+		        }
+		    },
 				nav: true,
 				navText : ['<i class="iconfont-angle-left"></i>','<i class="iconfont-angle-right"></i>']
 			});

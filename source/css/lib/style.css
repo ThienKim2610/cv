@@ -144,10 +144,13 @@ h3{
     margin-left: -310px;
 	background: #fff;
 }
+.section-hello .btn-block{
+	margin-top: 80px;
+}
 .btn{
 	display: inline-block;
 	padding: 10px 40px 6px;
-	margin: 80px 10px 0;
+	margin: 0 10px;
 	font-size: 20px;
 	opacity: .9;
 	text-transform: uppercase;
@@ -289,14 +292,14 @@ h3{
 	position: absolute;
 	top: 0;
 	left: -75px;
-	border: 1px solid rgba(255, 255, 255, 0.08);
+	border: 1px solid rgba(255, 255, 255, 0.2);
 }
 #experiment .owl-carousel .owl-controls i{
 	display: inline-block;
 	padding: 5px 10px;
 	font-size: 16px;
 	font-size: 18px;
-	color: rgba(255, 255, 255, 0.08);
+	color: rgba(255, 255, 255, 0.2);
 }
 #experiment .owl-carousel .owl-controls i:hover{
 	color: #fff;
@@ -536,10 +539,11 @@ h3{
 }
 .education .edu-content{
 	float: left;
-    margin-left: 20px;
-    padding-left: 20px;
-    padding-bottom: 50px;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-bottom: 50px;
 	border-left: 1px solid #DBDBE0;
+	width: calc(100% - 200px);
 }
 #back-top{
 	z-index: 15;
@@ -555,7 +559,7 @@ h3{
     color: #fff;
     font-size: 20px;
     text-align: center;
-    background-color: rgba(160, 160, 160, .6);
+    background-color: rgba(160, 160, 160, .8);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-transition: all 500ms ease;
@@ -564,4 +568,92 @@ h3{
 #back-top:hover{
 	text-decoration: none;
 	background-color: rgba(160, 160, 160, .9);
+}
+
+
+/*==========  RESPONSIVE ==========*/
+
+@media only screen and (max-width : 767px) {
+	.section-hello h1{
+		font-size: 2em;
+	}
+	.section-hello .sub-title{
+		font-size: 26px;
+	}
+	.section-hello .sub-title:after, .section-hello .sub-title:before{
+		width: 80%;
+    margin: 0 auto;
+    left: 0;
+	}
+	.btn-block .btn:not(:first-child){
+		margin-top: 15px;
+	}
+	#experiment h2{ margin-bottom: 5px;}
+	#experiment .owl-carousel{
+		margin-top: 60px;
+	}
+	#experiment .timeline-box li{
+		margin-bottom: 10px;
+	}
+	.flex{ display: block;}
+	.timeline-box .date-wrapper .date{
+		right: auto;
+		left: 40px;
+	}
+	.gallery-filter{
+		overflow-x: scroll;
+		white-space: nowrap;
+		width: 100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.portfolio-carousel{
+		margin: 0;
+	}
+	.education .edu-content{
+		float: none;
+		padding-top: 15px;
+		clear: both;
+    width: calc(100% - 20px);
+		padding-left: 15px;
+	}
+	#experiment .owl-carousel .owl-controls{
+		left: 0;
+    top: -45px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	
+}
+
+@media only screen and (min-width : 960px) {
+	
+}
+@media only screen and (min-width : 768px) and (max-width : 991px){
+	.timeline-box .date-wrapper .date{
+		left: 40px;
+		right: auto;
+	}
+	#experiment h2{ margin-bottom: 5px;}
+	#experiment .owl-carousel{
+		margin-top: 60px;
+	}
+	#experiment .owl-carousel .owl-controls{
+		left: 0;
+    top: -45px;
+	}
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+	
 }

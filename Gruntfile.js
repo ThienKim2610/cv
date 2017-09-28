@@ -79,5 +79,5 @@ module.exports = function (grunt) {
         }
     });
     grunt.file.expand('./node_modules/grunt-*/tasks').forEach(grunt.loadTasks);
-    grunt.registerTask('default', ['copy', 'cssmin', 'watch']);
+    grunt.registerTask('default', ['copy', 'cssmin', 'uglify', 'watch']);
 };
