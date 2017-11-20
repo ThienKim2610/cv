@@ -388,6 +388,9 @@ h3{
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
+.preview-item:hover{
+	filter: none;
+}
 .preview-item:hover .img-wrap {
 	background-position: center 100%;
 }
@@ -406,7 +409,7 @@ h3{
     left: 0;
     overflow: hidden;
     text-align: center;
-    background: rgba(35, 31, 44, 0.7);
+    background: rgba(35, 31, 44, 0.3);
     color: white;
     opacity: 0;
     visibility: hidden;
@@ -432,7 +435,7 @@ h3{
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, 1);
     margin-right: 1px;
     overflow: hidden;
     -webkit-transition: all 0.6s ease;
@@ -485,8 +488,8 @@ h3{
 	color:#333;
     cursor: pointer;
 }
-.gallery-filter li a:hover, .gallery-filter li a.active{
-	color: #5105c2;
+.gallery-filter li a:hover, .gallery-filter li a.active, .gallery-filter li .mixitup-control-active{
+	color: #5105c2;.
 	text-decoration: underline;
 }
 .gallery-filter li + li:before {
@@ -569,7 +572,16 @@ h3{
 	text-decoration: none;
 	background-color: rgba(160, 160, 160, .9);
 }
-
+.portfolio-carousel{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.mixItUp{
+	width: 20%;
+	float: left;
+	padding: 0 15px;
+	margin-bottom: 15px;
+}
 
 /*==========  RESPONSIVE ==========*/
 
@@ -671,6 +683,16 @@ h3{
 		.navbar-collapse.in {
 		    overflow-y: visible;
 		}
+		.portfolio-carousel{
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+		.mixItUp{
+			width: 25%;
+		}
+		.preview-item{
+			height: 220px;
+		}
 }
 
 @media only screen and (min-width : 960px) {
@@ -718,3 +740,4 @@ h3{
     transform: none;
   }
 }
+
