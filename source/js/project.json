@@ -1,0 +1,126 @@
+{
+	"projects": [
+		{
+			"id": "proj-01",
+			"status": "on",
+			"title": "Entrada",
+			"category": ["bootstrap"],
+			"img": "images/entrada.jpg",
+			"preview-img": "images/large/entrada.jpg",
+			"preview-link": "https://thienkim-frontend.github.io/entrada/",
+			"github": "https://github.com/thienkim-frontend/entrada/"
+		},
+		{
+			"id": "proj-02",
+			"status": "on",
+			"title": "Company Website",
+			"category": ["bootstrap", "single-page"],
+			"img": "images/company-website.jpg",
+			"preview-img": "images/large/company-website.jpg",
+			"preview-link": "https://thienkim-frontend.github.io/company-website/",
+			"github": "https://github.com/thienkim-frontend/company-website/"
+		},
+		{
+			"id": "proj-03",
+			"status": "on",
+			"title": "VSB",
+			"category": ["bootstrap", "wordpress"],
+			"img": "images/vsb.jpg",
+			"preview-img": "images/large/vsb.jpg",
+			"preview-link": "https://thienkim-frontend.github.io/vsb/",
+			"github": "https://github.com/thienkim-frontend/vsb/"
+		},
+		{
+			"id": "proj-04",
+			"status": "on",
+			"title": "Company Website",
+			"category": ["bootstrap"],
+			"img": "images/wanderlust.jpg",
+			"preview-img": "images/large/wanderlust.jpg",
+			"preview-link": "https://thienkim-frontend.github.io/wanderlust/",
+			"github": "https://github.com/thienkim-frontend/wanderlust/"
+		},
+		{
+			"id": "proj-05",
+			"status": "on",
+			"title": "Volvo",
+			"category": ["bootstrap", "wordpress"],
+			"img": "images/volvo.jpg",
+			"preview-img": "images/large/volvo.jpg",
+			"preview-link": "https://thienkim-frontend.github.io/volvo/",
+			"github": "https://github.com/thienkim-frontend/volvo/"
+		},
+		{
+			"id": "proj-06",
+			"status": "off",
+			"title": "Likipe",
+			"category": ["bootstrap", "single-page"],
+			"img": "images/likipe.jpg",
+			"preview-img": "images/large/likipe.jpg",
+			"preview-link": "https://thienkim-frontend.github.io/likipe/",
+			"github": "https://github.com/thienkim-frontend/likipe/"
+		},
+		{
+			"id": "proj-07",
+			"status": "on",
+			"title": "Baaboo App",
+			"category": ["bootstrap", "angular"],
+			"img": "images/baaboo.angular.jpg",
+			"preview-img": "images/large/baaboo.angular.jpg",
+			"preview-link": "https://thienkim-frontend.github.io//baaboo.angular/#!",
+			"github": "https://github.com/thienkim-frontend/baaboo.angular/"
+		},
+		{
+			"id": "proj-08",
+			"status": "off",
+			"title": "Fashion Shop",
+			"category": ["bootstrap", "single-page"],
+			"img": "images/fashion-shop.jpg",
+			"preview-img": "images/large/fashion-shop.jpg",
+			"preview-link": "https://thienkim-frontend.github.io/fashion-shop/",
+			"github": "https://github.com/thienkim-frontend/fashion-shop/"
+		},
+		{
+			"id": "proj-09",
+			"status": "on",
+			"title": "EDM for Citi bank",
+			"category": ["email"],
+			"img": "images/email.jpg",
+			"preview-img": "images/large/email.jpg",
+			"preview-link": "https://thienkim-frontend.github.io/edm/",
+			"github": "https://github.com/thienkim-frontend/edm/"
+		},
+		{
+			"id": "proj-10",
+			"status": "on",
+			"title": "Mountain",
+			"category": ["bootstrap", "single-page"],
+			"img": "images/mountain.jpg",
+			"preview-img": "images/large/mountain.jpg",
+			"preview-link": "https://thienkim-frontend.github.io/mountain/",
+			"github": "https://github.com/thienkim-frontend/mountain/"
+		},
+		{
+			"id": "proj-11",
+			"status": "on",
+			"title": "Organic",
+			"category": ["bootstrap", "single-page"],
+			"img": "images/organic.jpg",
+			"preview-img": "images/large/organic.jpg",
+			"preview-link": "https://thienkim-frontend.github.io/organic/",
+			"github": "https://github.com/thienkim-frontend/organic/"
+		},
+		{
+			"id": "proj-12",
+			"status": "on",
+			"title": "Bon Voyage",
+			"category": ["bootstrap", "single-page"],
+			"img": "images/bon-voyage.jpg",
+			"preview-img": "images/large/bon-voyage.jpg",
+			"preview-link": "https://thienkim-frontend.github.io/bon-voyage/",
+			"github": "https://github.com/thienkim-frontend/bon-voyage/"
+		}
+	]
+}
+
+
